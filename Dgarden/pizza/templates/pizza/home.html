@@ -1,6 +1,10 @@
-{% extends "base.html" %}
+{% extends "pizza/base.html" %}
 
 {% block content %}
+    <div class="text-center">
+        {% load static %}
+        <img src="{% static "nodejs.jpg" %}" class="img-fluid" alt="GardenPizza">
+    </div>
     <h1>PizzaGarden</h1>
     <a href="{% url "order" %}">Order a pizza</a>
 {% endblock %}
